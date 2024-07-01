@@ -54,7 +54,7 @@ block-three  */
 
 .top-line {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 22.5px;
   border-bottom: 1px solid #e7e9fc;
   width: 1440px;
 }
@@ -105,6 +105,22 @@ block-three  */
 .top-line-contacts-link:hover,
 .top-line-contacts-link:focus {
   color: #404bbf;
+}
+
+.top-line-nav-list {
+  display: inline-flex;
+  gap: 40px;
+  margin-left: 76px;
+}
+
+.top-line-contacts-list {
+  display: inline-flex;
+  gap: 40px;
+  margin-left: 332px;
+}
+
+.container .wrapper {
+  display: inline-flex;
 }
 
 /* hero */
@@ -175,7 +191,6 @@ block-three  */
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  justify-content: space-between;
 }
 
 .block-one-item {
@@ -198,7 +213,6 @@ block-three  */
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  justify-content: space-between;
 }
 
 .block-two .title-two {
@@ -226,7 +240,6 @@ block-three  */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   column-gap: 24px;
   row-gap: 48px;
 }
