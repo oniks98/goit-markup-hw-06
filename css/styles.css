@@ -678,7 +678,8 @@ input:focus+.input-icon {
   /* 2-спосіб переноса кастомного чекбокса на початок строки */
   /* position: relative;
   padding-left: 26px;
-} */
+ */
+}
 
 .label-text-checkbox {
   font-size: 12px;
