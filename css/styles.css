@@ -676,9 +676,8 @@ input:focus+.input-icon {
 .form-checkbox {
   margin-bottom: 24px;
   /* 2-спосіб переноса кастомного чекбокса на початок строки */
-  /* position: relative;
+  position: relative;
   padding-left: 26px;
- */
 }
 
 .label-text-checkbox {
@@ -687,8 +686,8 @@ input:focus+.input-icon {
   letter-spacing: 0.04em;
   color: #8e8f99;
   /* 1-спосіб переноса кастомного чекбокса на початок строки */
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 
 .icon-span-checkbox {
@@ -704,13 +703,13 @@ input:focus+.input-icon {
   justify-content: center;
   fill: transparent;
   /* 1-спосіб переноса кастомного чекбокса на початок рядка */
-  order: -1;
-  margin-right: 8px;
+  /* order: -1;
+  margin-right: 8px; */
   /* 2-спосіб переноса кастомного чекбокса на початок рядка */
-  /* position: absolute;
+  position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%); */
+  transform: translateY(-50%);
 }
 
 input:checked + label > span {
