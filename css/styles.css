@@ -657,18 +657,9 @@ block-three  */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus-within {
+input:focus + .input-icon {
   fill: #4d5ae5;
 }
-
-/* 2-й і 3-й спосіб */
-/* .input-text:focus+.input-icon {
-   fill: #4D5AE5;
-   }
-
-input:focus+.input-icon {
-  fill: #4d5ae5;
-} */
 
 .form-comment {
   margin-bottom: 16px;
