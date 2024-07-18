@@ -473,7 +473,7 @@ block-three  */
 }
 
 .footer-email-input {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .footer-form {
@@ -519,13 +519,19 @@ block-three  */
   border: none;
 }
 
+.footer-button-email:hover,
+.footer-button-email:focus {
+  background-color: #31d0aa;
+}
+
 .footer-send-icon {
   margin-left: 16px;
   fill: #fff;
 }
 
 /* MODAL */
-.modal-overlay {
+
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -535,6 +541,21 @@ block-three  */
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* прихований, але не пробивний кліком */
+  opacity: 0;
+  /* і прихований і пробивний кліком */
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -100%);
 }
 
 .modal {
@@ -631,6 +652,7 @@ block-three  */
   position: absolute;
   left: 16px;
   top: 50%;
+  fill: #2e2f42;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -702,6 +724,7 @@ input:focus+.input-icon {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
   /* 1-спосіб переноса кастомного чекбокса на початок рядка */
   /* order: -1;
   margin-right: 8px; */
@@ -756,4 +779,9 @@ input:checked + label > span {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-button:hover,
+.send-button:focus {
+  background-color: #404bbf;
 }
