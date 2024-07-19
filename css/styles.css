@@ -517,6 +517,9 @@ block-three  */
   cursor: pointer;
   background-color: #4d5ae5;
   border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-button-email:hover,
