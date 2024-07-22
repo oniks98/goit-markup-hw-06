@@ -50,6 +50,11 @@
           <a href="./index.html" class="logo-web logo-top-line"
             >Web<span class="logo-studio">Studio</span>
           </a>
+          <button class="mobil-menu-button" type="button" data-mobil-open>
+            <svg class="mobil-menu-icon" width="18" height="16">
+              <use href="./images/icons.svg#icon-mobil-menu"></use>
+            </svg>
+          </button>
           <ul class="top-line-nav-list">
             <li class="nav-item-studio">
               <a class="top-line-nav-link nav-link-studio" href="./index.html"
@@ -150,6 +155,7 @@
             <li class="block-two-item">
               <img
                 src="./images/img-1.jpg"
+                srcset="./images/imgmark@1x.jpg 1x, ./images/imgmark@2x.jpg 2x"
                 alt="photo Mark Guerrero"
                 width="264"
               />
@@ -189,7 +195,12 @@
               </div>
             </li>
             <li class="block-two-item">
-              <img src="./images/img-2.jpg" alt="photo Tom Ford" width="264" />
+              <img
+                src="./images/img-2.jpg"
+                srcset="./images/imgtom@1x.jpg 1x, ./images/imgtom@2x.jpg 2x"
+                alt="photo Tom Ford"
+                width="264"
+              />
               <div class="team-content">
                 <h3 class="block-two title-three">Tom Ford</h3>
                 <p class="block-two text">Frontend Developer</p>
@@ -228,6 +239,10 @@
             <li class="block-two-item">
               <img
                 src="./images/img-3.jpg"
+                srcset="
+                  ./images/imgcamila@1x.jpg 1x,
+                  ./images/imgcamila@2x.jpg 2x
+                "
                 alt="photo Camila Garcia"
                 width="264"
               />
@@ -269,6 +284,10 @@
             <li class="block-two-item">
               <img
                 src="./images/img-4.jpg"
+                srcset="
+                  ./images/imgdaniel@1x.jpg 1x,
+                  ./images/imgdaniel@2x.jpg 2x
+                "
                 alt="photo Daniel Wilson"
                 width="264"
               />
@@ -319,6 +338,10 @@
               <div class="block-three-item-box">
                 <img
                   src="./images/BankingApp.jpg"
+                  srcset="
+                    ./images/imgbanking360@1x.jpg 1x,
+                    ./images/imgbanking360@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                 />
@@ -337,6 +360,10 @@
               <div class="block-three-item-box">
                 <img
                   src="./images/CashlessPayment.jpg"
+                  srcset="
+                    ./images/imgcashless360@1x.jpg 1x,
+                    ./images/imgcashless360@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -355,6 +382,10 @@
               <div class="block-three-item-box">
                 <img
                   src="./images/MeditationApp.jpg"
+                  srcset="
+                    ./images/imgmedidation360@1x.jpg 1x,
+                    ./images/imgmedidation360@2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                 />
@@ -373,6 +404,10 @@
               <div class="block-three-item-box">
                 <img
                   src="./images/TaxiService.jpg"
+                  srcset="
+                    ./images/imgtaxi360@1x.jpg 1x,
+                    ./images/imgtaxi360@2x.jpg 2x
+                  "
                   alt="Taxi Service"
                   width="360"
                 />
@@ -391,6 +426,10 @@
               <div class="block-three-item-box">
                 <img
                   src="./images/ScreenIllustrations.jpg"
+                  srcset="
+                    ./images/imgscreen360@1x.jpg 1x,
+                    ./images/imgscreen360@2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -409,6 +448,10 @@
               <div class="block-three-item-box">
                 <img
                   src="./images/OnlineCourses.jpg"
+                  srcset="
+                    ./images/imgonline360@1x.jpg 1x,
+                    ./images/imgonline360@2x.jpg 2x
+                  "
                   alt="Online Courses"
                   width="360"
                 />
@@ -499,6 +542,8 @@
       </div>
     </footer>
 
+    <!-- MODAL -->
+
     <div class="backdrop" data-modal>
       <div class="modal">
         <button class="close-button" type="button" data-modal-close>
@@ -573,6 +618,80 @@
         </form>
       </div>
     </div>
+
+    <!-- MOBIL MENU -->
+
+    <div class="mobil-menu" data-mobil>
+      <button class="close-button-mobil-menu" type="button" data-mobil-close>
+        <svg class="close-icon-mobil-menu" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-mobil-menu"></use>
+        </svg>
+      </button>
+      <nav class="nav-mobil-menu">
+        <ul class="top-line-nav-mobil-menu">
+          <li class="nav-item-studio-mobil">
+            <a
+              class="top-line-nav-link-mobil nav-link-studio-mobil"
+              href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li><a class="top-line-nav-link-mobil" href="">Portfolio</a></li>
+          <li><a class="top-line-nav-link-mobil" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="top-line-contacts-mobil-menu">
+        <ul class="top-line-contacts-mobil-menu">
+          <li>
+            <a
+              class="top-line-contacts-link-mobil mobil-tel"
+              href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a
+              class="top-line-contacts-link-mobil"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="menu-mobil-icon-media">
+        <ul class="menu-mobil-list-icon">
+          <li class="menu-mobil-item-icon">
+            <a href="" class="menu-mobil-icon-link" target="_blank">
+              <svg class="menu-mobil-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-mobil-item-icon">
+            <a href="" class="menu-mobil-icon-link" target="_blank">
+              <svg class="menu-mobil-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-mobil-item-icon">
+            <a href="" class="menu-mobil-icon-link" target="_blank">
+              <svg class="menu-mobil-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-mobil-item-icon">
+            <a href="" class="menu-mobil-icon-link" target="_blank">
+              <svg class="menu-mobil-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobilmenu.js"></script>
   </body>
 </html>
