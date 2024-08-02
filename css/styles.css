@@ -1,3 +1,92 @@
+/* 
+-Розмітка і класи-
+
+Клас
+class="блок section-NAME(семантичний блок)-елемент_призначення (не обов'язково)"
+або
+class="section-NAME(семантичний блок)-елемент_призначення (не обов'язково)"
+
+-Секція, контейнер, обгортка, список: 
+section   .section-NAME
+container .section-NAME-container
+nav       .section-NAME-nav
+address   .section-NAME-address
+form      .section-NAME-form_призначення
+div       .section-NAME-block_призначення
+div       .section-NAME-box_призначення
+span      .section-NAME-елемент_призначення
+ul,ol     .section-NAME-list_призначення
+li        .section-NAME-item_призначення
+
+Призначення: 
+_page, _descr, _text, _info
+_icon, _photo, _img
+_data, _phone, _mail, _contacts, _name, _logo
+_net, _link
+_ext, _next
+_form, _input, _field
+
+-Секції section:
+.section-topline
+.section-hero
+.toggle (мобільне меню)
+.section-feature
+.section-team 
+.section-portfolio
+.footer
+.modal (модальне вікно)
+
+-Посилання  <a>:
+.section-NAME-link_page (сторінка)
+.section-NAME-link_logo (лого)
+.section-NAME-logo_ext (лого /extension/ продовження)
+.section-NAME-link_net (соц. мережа)
+.section-NAME-link_phone (тел.)
+.section-NAME-link_mail (пошта)
+.section-NAME-link_data (дані)
+.section-NAME-link_contacts (контакти)
+:hover,:focus
+
+-Заголовки <title>: 
+h1       .title
+h2       .section-NAME-title (заголовки секцій)
+h3       .section-NAME-subtitle (підзаголовки секцій)
+h4,h5,h6 .section-NAME-title_descr (заголовки опису /description/)
+h4,h5,h6 .section-NAME-title_photo (заголовки фото або _img малюнків i _icon іконок)
+h4,h5,h6 .section-NAME-title_data (заголовки даних)
+h4,h5,h6 .section-NAME-title_text (заголовки текту)
+
+-Текст <p>: 
+.section-NAME-text_призначення
+
+-Кнопки <button>:
+.section-NAME-button_descr (до детального опису)
+.section-NAME-button_send (відправлення даних)
+.section-NAME-button_toggle (до мобільного меню)
+.toggle-button_close
+.section-NAME-button_modal (до модального вікна)
+.modal-button_close
+:hover,:focus
+
+Форми і чекбокси:
+form     .section-NAME-form_призначення
+label    .section-NAME-label_призначення
+input    .section-NAME-input_призначення
+textarea .section-NAME-area_призначення
+.section-NAME-checkbox_призначення
+:hover,:focus
+
+-@media:
+для tablet і desktop у кінці кожної секції;
+для background-image ретина 2х зразу після 1х 
+
+Фото і іконки:
+./images/...jpg,png
+./images/icons.svg
+
+_____________________________________________
+*/
+
 /* BODY */
 
 body {
